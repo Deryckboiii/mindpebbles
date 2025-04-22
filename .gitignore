@@ -1,0 +1,11 @@
+.vs/
+*.user
+*.suo
+*.cache
+bin/
+obj/
+*.log
+*.DS_Store
+*.vscode/
+*.sln.docstates
+*.fsproj.user
