@@ -24,7 +24,6 @@ This project was created as part of a university assignment to experiment with F
 - Dark/Light mode toggle
 - Save favorite thought (stored client-side)
 - View statistics at `/stats`
-- Browse user-submitted pebbles at `/custom`
 - Filter thoughts by category at `/category/:name`
 - API: `/api/all`, `/api/random`
 
