@@ -24,8 +24,20 @@ This project was created as part of a university assignment to experiment with F
 - Dark/Light mode toggle
 - Save favorite thought (stored client-side)
 - View statistics at `/stats`
-- Filter thoughts by category at `/category/:name`
 - API: `/api/all`, `/api/random`
+
+## Live Demo
+
+The MindPebbles application is live and hosted on Azure!
+
+[Open it here](https://mindpebbles-app2025-d6e5gsgmcchhdwd8.northeurope-01.azurewebsites.net)
+
+The live version includes full functionality:
+
+- Random motivational pebbles on each load  
+- Dark/Light mode toggle    
+- View statistics on `/stats`  
+- Public API endpoints (`/api/all`, `/api/random`) 
 
 ## How to Run Locally
 
