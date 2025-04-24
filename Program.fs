@@ -53,7 +53,7 @@ let statsHandler : HttpHandler =
             div [] [
                 h1 [] [ str "Pebble Statistics" ]
                 p [] [ str $"Total pebbles: {total}" ]
-                p [] [ str $"Custom pebbles: {custom}" ]
+                //p [] [ str $"Custom pebbles: {custom}" ]
                 h2 [] [ str "Category breakdown:" ]
                 ul [] [
                     for (cat, count) in grouped do
