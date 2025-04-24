@@ -1,4 +1,4 @@
-module MindPebbles.Views
+﻿module MindPebbles.Views
 
 open Giraffe.ViewEngine
 

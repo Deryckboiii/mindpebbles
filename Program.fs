@@ -34,16 +34,6 @@ let categoryHandler (category: string) : HttpHandler =
         let bgColor = getRandomColor()
         htmlView (homeView quote bgColor) next ctx
 
-let dailyHandler : HttpHandler =
-    fun next ctx ->
-        let all = allThoughts ()
-        let arr = List.toArray all
-        let index = DateTime.Now.DayOfYear % arr.Length
-        let quote = arr.[index].Text
-        let bgColor = "#fffbe6"
-        htmlView (homeView quote bgColor) next ctx
-
-
 let jsonSettings = JsonSerializerOptions(WriteIndented = true)
 
 let apiAllHandler : HttpHandler =
@@ -76,7 +66,6 @@ let webApp =
     choose [
         route "/api/all" >=> apiAllHandler
         route "/api/random" >=> apiRandomHandler
-        route "/daily" >=> dailyHandler
         routef "/category/%s" categoryHandler
         route "/" >=> homeHandler
         route "/stats" >=> statsHandler
